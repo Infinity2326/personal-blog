@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="flex-container">
+        <header class="flex-item">
+            <div class="header-text">My personal blog</div>
+            <div class="change-theme"></div>
+        </header>
+        <main>
+            <aside class="flex-item"></aside>
+            <section class="flex-item">        
+                <div class="create-post">
+                    <div class="flex-item">
+                        <button class="default-button open-textarea">Create new post</button>
+                    </div>
+                </div>
+                    <div class="flex-container">
+                        <form class="post-form hidden" name="createPost" action="">
+                            <textarea maxlength="200" name="formInput" class="form-input" id="" cols="30" rows="10"></textarea>
+                            <div>Symbols remain: <span class="remain-symbols">200</span></div>
+                            <button type="submit" class="default-button submit-button">Save</button>
+                        </form>
+                        <div class="posts"></div>
+                    </div>
+
+            </section>
+            <aside class="flex-item"></aside>
+        </main>
+        <footer class="flex-item"></footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html> 
